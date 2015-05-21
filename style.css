@@ -1,0 +1,58 @@
+table#calendar a {
+    text-decoration: none;
+}
+
+tr#days{
+    width:18%;
+}
+tr#days th.sat,
+tr#days th.sun 
+{
+    width:5%;
+}
+
+table#vcalendar tr#title {
+    page-break-before: left;
+}
+
+
+table#vcalendar tr#days th {
+    color: black; 
+    background-color: transparent;
+    font-weight: bold; 
+    text-align: center;
+    padding: 1px 0.33em;
+}
+table#vcalendar tr#title th {
+    background: transparent; 
+    color: black; 
+    border-width: 0; 
+    font-size: 200%;}
+
+table#vcalendar td {
+    vertical-align:top;     
+    padding:0; 
+    border: 0px solid gray; 
+    border-width: 0 0 1px 1px;
+}
+
+table#vcalendar td.sat {border-right: 1px solid gray;}
+
+table#vcalendar a {font-weight: bold; display: block; margin: 0;}
+
+table#vcalendar a:link {color: navy;}
+
+div.date{float: right; text-align:center; border: 1px solid gray; border-width: 0 0 1px 1px; padding: 0.125em 0.25em 0 0.25em; margin:0;  background: transparent;}
+td.sat div.date, td.sun div.date{border-width: 0; color: gray; background: transparent;}
+td.jun div.date, td.aug div.date{border-width: 0; color: gray; background: transparent;}	
+table#vcalendar td.sat, table#vcalendar td.sun {background: transparent;}
+
+table#vcalendar td.lastMonth, table#vcalendar td.nextMonth {
+    background: transparent; color: black;}
+
+table#vcalendar tr#lastweek td {border-bottom: 2px solid #AAB;}
+
+table#vcalendar td.holiday {background: #FAA;
+                           border-color: #BBB #FCC #FCC #BBB;}
+
+table#vcalendar td.atoday {color: #C33; font-weight: bold; background: #FF6; border: 1px solid black;}
