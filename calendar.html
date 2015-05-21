@@ -3,21 +3,25 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="js/node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="js/node_modules/angular/angular.js"></script>
     <script src="app.js"></script>    
 </head>
 
-<body ng-app = "timeSheet">
-
+<body ng-controller ="mainCtrl">
+<div>
 <h2>Calendar</h2><table id='vcalendar'>
 
 <tr class='monthHeader'><th colspan='7'>January 2015</th></tr><tr class='days'><th class='header'>Sunday</th><th class='header'>Monday</th><th class='header'>Tuesday</th><th class='header'>Wednesday</th><th class='header'>Thur</th><th class='header'>F</th><th class='header'>S</th></tr><tr><td colspan='4'>&nbsp;</td>
 
-<td class=' Jan days Thu'><div class='date '>1</div>
-	<button>Submit Hours</button>
+<td class=' Jan days Thu' ><div class='date '>1</div>
+        <button ng-click ="toggleModal()">Submit Hours</button>
+        <myModal></myModal>
 </td>
 <td class=' Jan days Fri'><div class='date '>2</div>
 	<button>Submit Hours</button>
+    
+  
 </td>
 <td class=' Jan days Sat'><div class='date '>3</div>
 	<button>Submit Hours</button>
@@ -60,7 +64,7 @@
 	<td class=' Jan days Thu'><div class='date '>29</div></td>
 	<td class=' Jan days Fri'><div class='date Present'>30</div></td>
 	<td class=' Jan days Sat'><div class='date '>31</div></td>
-
+</div>
 </body>
 
 
